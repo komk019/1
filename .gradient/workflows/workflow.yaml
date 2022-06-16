@@ -23,10 +23,7 @@ jobs:
     uses: container@v1
     with:
       args:
-        - bash
-        - -c
-        - >-
-          cd /inputs/mnist-sample && python mnist.py
+        - lscpu
       image: tensorflow/tensorflow:1.15.5-py3
     needs:
       - CloneRepo
